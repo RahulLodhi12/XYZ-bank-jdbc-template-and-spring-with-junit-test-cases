@@ -18,7 +18,15 @@ public class Customer {
         this.AccountNumber = accNo;
     }
 
-    public Customer(String accNo1, String accNo2) {
+    public Customer(String accountNumber, String customerName, String branch) {
+        this.AccountNumber = accountNumber;
+        this.CustomerName = customerName;
+        this.Branch = branch;
+    }
+
+    public Customer(String accountNumber, double balance) {
+        this.AccountNumber = accountNumber;
+        this.Balance = balance;
     }
 }
 

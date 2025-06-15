@@ -1,8 +1,8 @@
 com\jpmc\dao\InvalidAccountNumber.class
 com\jpmc\dao\MinimumDeposit.class
+com\jpmc\dao\DummyDao.class
 com\jpmc\dao\InvalidPin.class
 com\jpmc\dao\DaoClass.class
-com\jpmc\dao\ConnectToDB.class
 com\jpmc\dao\MaximumWithdraw.class
 com\jpmc\Main.class
 com\jpmc\bean\Customer.class
