@@ -14,6 +14,11 @@ public class ServiceClass {
     @Autowired
     DaoClass daoClass;
 
+    //Needed for JUnit Testing -> For creating Mock Service Object
+    public ServiceClass(DaoClass daoClass) {
+        this.daoClass = daoClass;
+    }
+
     public boolean createAccount(Customer customer) throws SQLException {
         return daoClass.createAccount(customer);
     }

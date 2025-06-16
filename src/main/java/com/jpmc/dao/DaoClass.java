@@ -29,6 +29,9 @@ public class DaoClass {
 
 
     public boolean customerLogin(Login login) throws SQLException {
+        if(login.getAccountNumber().equals("")) return false;
+        if(login.getPin().equals("")) return false;
+
         //Write a Query
         String query = "select * from login where AccountNumber=?";
 
@@ -44,6 +47,10 @@ public class DaoClass {
 
 
     public boolean createAccount(Customer customer) throws SQLException {
+        if(customer.getAccountNumber().equals("")) return false;
+        if(customer.getCustomerName().equals("")) return false;
+        if(customer.getBranch().equals("")) return false;
+
         //Write a Query
         String query = "insert into customer(AccountNumber,CustomerName,Branch,Balance) values(?,?,?,?)";
 
