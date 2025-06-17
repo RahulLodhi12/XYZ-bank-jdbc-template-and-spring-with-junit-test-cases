@@ -21,6 +21,7 @@
 
     <!-- @Component: Automatically detects and registers it as a bean.-->
     <!--    By using @Component, no need to create bean-->
+<!--         The below line for scanning all these Component Annotations: @Controller, @Service, @Repositry-->
     <context:component-scan base-package="com.jpmc"></context:component-scan>
 
 </beans>
