@@ -36,7 +36,7 @@ public class ServiceTestMock {
         //4. Test the method -> gets the return "true" from the thenReturn(true), via when() method hit.
         assertTrue(serviceClass.createAccount(new Customer("174877791759875275","rekha singh","jodhpur")));
 
-        //5. Verify the method was actually called
+        //5. Verify the method was actually called -> verify is used generally when method return type is void.
         verify(daoMock).createAccount(new Customer("174877791759875275","rekha singh","jodhpur"));
     }
 
